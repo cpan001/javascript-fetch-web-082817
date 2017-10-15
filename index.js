@@ -15,11 +15,7 @@ const app = "I don't do much.";
 //
 // xhr.send()
 
-const token = "3a9efbcdf9d8aebf196dfb28e0671b293c3f81fa"
-fetch('https://api.github.com/users/cpan001/repos', {
-  headers: {
-    Authorization: `token ${token}`
-  }
+fetch('https://api.github.com/users/cpan001/repos'
 })
 .then(res => res.json())
 .then(json => console.log(json))
